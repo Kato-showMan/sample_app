@@ -19,8 +19,6 @@ ActiveRecord::Schema.define(version: 20180812025209) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "ar_internal_metadata", ["key"], name: "sqlite_autoindex_ar_internal_metadata_1", unique: true
-
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
